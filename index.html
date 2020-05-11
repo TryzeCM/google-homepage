@@ -2,9 +2,54 @@
 <html>
     <head>
         <style>
+            body {
+                font-family: arial, sans-serif;
+            }
             #logo {
                 display: block;
-                margin: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10%; 
+            }
+
+            .nav-link {
+                margin: 2px;
+                color: rgba(0,0,0,0.87);
+                font-size: 13px;
+                text-decoration: none;
+            }
+
+            .nav-link:hover {
+                text-decoration: underline;
+            }
+
+            #SignIn {
+                border: 1px solid #4285f4;
+                font-weight: bold; 
+                outline: none;
+                display: inline-block;
+                line-height: 28px;
+                padding: 0 12px;
+                border-radius: 2px;
+                color: #fff;
+            }
+
+            .foot-link {
+                margin: 10px;
+                color: #5f6368;
+                font-size: 14px;
+                text-decoration: none;
+            }
+
+            .foot-link:hover {
+                text-decoration: underline;
+            }
+
+            footer {
+                bottom: 0;
+                position: fixed;
+                width: 99%;
+                background-color: #f2f2f2;
             }
 
             #form-search {
@@ -12,26 +57,28 @@
             }
 
             #input-search {
-                align-self: center; 
-                width: 250px;
+                align-self: center;
+                font-size: 15px; 
+                width: 500px;
                 margin: auto;
+                padding: 15px;
+                border: lightgrey solid 1px;
+                border-radius: 25px;
             }
 
-            #nav-list {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
+            .navr {
+                float: right;
             }
 
-            .nav-list-item {
-                display: inline;
+
+            .footr {
+                float: right; 
             }
 
-            li {
-                position: relative;
-                left: 100vw;
-            }
-            
+
+            /*.debug {
+                border: red solid;
+            }*/
 
         </style>
         <meta charset="utf-8"
@@ -39,21 +86,34 @@
     <body>
         <header>
             <nav id="navbar">
-                <ul id="nav-list">
-                    <li class="nav-list-item"><a class="nav-link" href="#">Über Google</a></li>
-                    <li class="nav-list-item"><a class="nav-link" href="#">Store</a></li>
-                    
-                    <li class="nav-list-item"><a class="nav-link" href="#">Gmail</a></li>
-                    <li class="nav-list-item"><a class="nav-link" href="#">Bilder</a></li>
-                    <li class="nav-list-item"><button class="nav-button">Anmelden</button></li>
-                </ul>
+                <span class="navl debug">
+                    <a class="nav-link" href="#">Über Google</a></li>
+                    <a class="nav-link" href="#">Store</a></li>
+                </span>
+                <span class="navr debug">   
+                    <a class="nav-link" href="#">Gmail</a></li>
+                    <a class="nav-link" href="#">Bilder</a></li>
+                    <button id="SignIn">Anmelden</button></li>
+                </span>
             </nav>
         </header>
         <main>
-            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <img id="logo" class="debug" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             <form id="form-search">
                 <input id="input-search" type="text">
             </form>
         </main>
+        <footer>
+            <span class="footl debug">
+                <a class="foot-link" href="#">Werbeprogramme</a>
+                <a class="foot-link" href="#">Unternehmen</a>
+                <a class="foot-link" href="#">Wie funktioniert die Google-Suche?</a>            
+            </span>
+            <span class="footr debug">   
+                <a class="foot-link" href="#">Datenschutzerklärung</a>
+                <a class="foot-link" href="#">Nutzungsbedingung</a>
+                <a class="foot-link" href="#">Einstellung</a>
+            </span>
+        </footer>
     </body>
 </html>
