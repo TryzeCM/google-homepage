@@ -12,8 +12,14 @@
                 margin-top: 10%; 
             }
 
+            #navbar {
+                position: relative;
+                top: 10px;
+
+            }
+
             .nav-link {
-                margin: 2px;
+                padding: 9px;
                 color: rgba(0,0,0,0.87);
                 font-size: 13px;
                 text-decoration: none;
@@ -25,10 +31,15 @@
 
             #SignIn {
                 border: 1px solid #4285f4;
+                background: #4285f4;
+                text-decoration: none;
+                cursor: default;
                 font-weight: bold; 
+                font-size: 13px;
                 outline: none;
                 display: inline-block;
                 line-height: 28px;
+                margin-right: 20px;
                 padding: 0 12px;
                 border-radius: 2px;
                 color: #fff;
@@ -66,6 +77,10 @@
                 border-radius: 25px;
             }
 
+            .navl {
+                line-height: 28px;
+            }
+
             .navr {
                 float: right;
             }
@@ -87,13 +102,13 @@
         <header>
             <nav id="navbar">
                 <span class="navl debug">
-                    <a class="nav-link" href="#">Über Google</a></li>
-                    <a class="nav-link" href="#">Store</a></li>
+                    <a class="nav-link" href="#">Über Google</a>
+                    <a class="nav-link" href="#">Store</a>
                 </span>
                 <span class="navr debug">   
-                    <a class="nav-link" href="#">Gmail</a></li>
-                    <a class="nav-link" href="#">Bilder</a></li>
-                    <button id="SignIn">Anmelden</button></li>
+                    <a class="nav-link" href="#">Gmail</a>
+                    <a class="nav-link" href="#">Bilder</a>
+                    <a id="SignIn" href="#">Anmelden</a>
                 </span>
             </nav>
         </header>
