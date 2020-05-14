@@ -1,0 +1,101 @@
+body {
+    font-family: arial, sans-serif;
+}
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%; 
+}
+
+#navbar {
+    position: relative;
+    top: 10px;
+
+}
+
+.nav-link {
+    padding: 9px;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+#SignIn {
+    border: 1px solid #4285f4;
+    background: #4285f4;
+    text-decoration: none;
+    cursor: default;
+    font-weight: bold; 
+    font-size: 13px;
+    outline: none;
+    display: inline-block;
+    line-height: 28px;
+    margin-right: 20px;
+    padding: 0 12px;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.foot-link {
+    margin: 10px;
+    color: #5f6368;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.foot-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    border: solid 1px #e4e4e4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    right: 1px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+#form-search {
+    display: grid;             
+}
+
+#input-search {
+    align-self: center;
+    font-size: 15px; 
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border: lightgrey solid 1px;
+    border-radius: 25px;
+}
+
+.navl {
+    line-height: 28px;
+}
+
+.navr {
+    float: right;
+}
+
+
+.footr {
+    float: right; 
+    padding-right: 25px;
+}
+
+.footl {
+    padding-left: 25px;
+}
+
+
+/*.debug {
+    border: red solid;
+}*/
