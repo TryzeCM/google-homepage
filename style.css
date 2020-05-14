@@ -95,6 +95,16 @@ footer {
     padding-left: 25px;
 }
 
+#span-buttons {
+    margin: auto;
+    margin-top: 25px;
+}
+
+.input-button{
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
 
 .debug {
     border: red solid;
